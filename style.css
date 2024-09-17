@@ -1,0 +1,602 @@
+/* Google Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* Defining Custome Variables */
+:root{
+    /* Colors */
+    --primary-color: #3b141c;
+    --secondary-color: #f3961c;
+
+    /* Website Max-Width */
+    --site-max-width: 1300px;
+}
+
+/* Setting for the whole website */
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+.button{
+    padding: 8px 28px;
+    border: 3px solid transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: var(--secondary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+.button:hover{
+    background: transparent;
+    border: 3px solid #fff;
+}
+
+#submit:hover{
+    border: 3px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.section_container{
+    width: var(--site-max-width);
+    margin: 0 auto;
+}
+
+.section_title{
+    text-align: center;
+    padding: 32px 0;
+    font-size: 32px;
+    font-family: "Righteous", sans-serif;
+    text-transform: uppercase;
+}
+
+.section_title::after{
+    content: '';
+    width: 80px;
+    background: var(--secondary-color);
+    height: 5px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+}
+
+/* Styling for the header section */
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    width: var(--site-max-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav_logo a{
+    display: flex;
+    align-items: center;
+}
+
+nav .nav_logo h2{
+    font-size: 32px;
+    color: #fff;
+}
+
+nav ul{
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li{
+    padding: 12px 32px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+nav ul li:hover{
+    background-color: var(--secondary-color);
+}
+
+nav ul li a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+
+nav label{
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+}
+
+label .menu_btn,
+label .close_btn{
+    display: none;
+}
+
+#click{
+    display: none;
+}
+
+/* Hero Section */
+.hero_section{
+    margin-top: 80px;
+    background: var(--primary-color);
+    height: calc(100vh - 80px);
+}
+
+.hero_container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.hero_container .text_section h2{
+    font-size: 40px;
+    color: var(--secondary-color);
+}
+
+.hero_container .text_section h3{
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 8px;
+}
+
+.hero_container .text_section p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin: 24px 0;
+}
+
+.hero_container .text_section .hero_section_button{
+    display: flex;
+    gap: 24px;
+}
+
+.hero_container .imgae_section{
+    max-width: 70%;
+    margin-top: 70px;
+
+    border-radius: 8px;
+}
+
+.hero_container .imgae_section iframe{
+    width:560px;
+    height:315px;
+
+}
+
+/* About Us Section */
+.about_us{
+    padding: 52px 0;
+    background: #d1d1d1;
+}
+
+.about_container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.about_container .text_section{
+    max-width: 50%;
+}
+
+.about_container .text_section p{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.about_container .image_section{
+    max-width: 100%;
+}
+
+.about_container .image_section img{
+    width: 100%;
+}
+
+/* Services Section */
+.services{
+    background: #252525;
+    color: #fff;
+    padding: 52px 0;
+}
+
+.services .service_container{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section_container .services_items img{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 7px 7px 20px rgb(56, 56, 56);
+}
+
+.section_container .services_items{
+    width: calc(100% / 3 - 32px);
+}
+
+.services_items .services_text{
+    text-align: center;
+}
+
+.services_items .services_text h3{
+    margin: 12px 0;
+}
+
+.services_items .services_text p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* Why Us Section */
+.why_us{
+    background: #d2d2d2;
+    padding: 52px 0;
+}
+
+.why_us .why_container{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.why_container .why_items img{
+    width: 30%;
+}
+
+.why_container .why_items{
+    width: calc(100% / 3 - 32px);
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.why_items .why_us_text{
+    text-align: center;
+}
+
+.why_items .why_us_text h3{
+    margin: 12px 0;
+}
+
+.why_items .why_us_text p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Gallery Section */
+.gallery{
+    background: #E3E3E3;
+    padding: 52px 0;
+}
+
+.gallery .gallery_container{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery .gallery_container iframe{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 4px 4px 20px;
+}
+
+
+.gallery_container .gallery_items{
+    width: calc(100% / 3 - 32px);
+}
+
+/* Contact Section */
+.contact{
+    background: #C1C1C1;
+    padding: 52px 0;
+}
+
+.contact_container{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.contact_container .contact_form{
+    max-width: 55%;
+    width: 100%;
+}
+
+.contact_container .contact_form .field{
+    margin: 10px 0;
+}
+
+.contact_container .contact_form .field label{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.contact_container .contact_form .field input{
+    width: 100%;
+    height: 50px;
+    padding: 0  12px;
+    font-size: 18px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+
+.contact_container .contact_form textarea{
+    width: 100%;
+    height: 200px;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+
+.contact_text .contact_items{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 50px 0;
+}
+
+.contact_text .contact_items i{
+    font-size: 32px;
+}
+
+.contact_items .contact_details h3{
+    margin: 10px 0;
+}
+
+/* Footer Section */
+footer{
+    background: #1b1b1b;
+    color: #fff;
+    padding: 52px 0;
+}
+
+.footer_section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_section h3{
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.footer_section .footer_logo a{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.footer_section .useful_links{
+    text-align: center;
+}
+
+.footer_section .useful_links ul li{
+    margin: 10px 0;
+}
+
+.footer_section .useful_links ul li a{
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer_section .useful_links ul li a:hover{
+    text-decoration: underline;
+}
+
+.footer_section .contact_us ul li{
+    margin: 10px;
+    font-size: 20px;
+}
+
+.footer_section .follow_us i{
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer_section .follow_us i:hover{
+    transform: scale(1.3);
+}
+
+.footer_section .follow_us a{
+    color: white;
+}
+/* Media Query */
+
+@media screen and (max-width: 1024px) {
+    .section_container{
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    nav{
+        padding: 0 24px;
+    }
+
+    label .menu_btn{
+        display: block;
+    }
+
+    nav ul{
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        transition: all 0.4s ease;
+    }
+
+    #click:checked ~ ul{
+        left: 0;
+    }
+
+    #click:checked ~ label .close_btn{
+        display: block;
+    }
+
+    #click:checked ~ label .menu_btn{
+        display: none;
+    }
+
+    nav ul li{
+        display: block;
+        padding: 8px 12px;
+        width: 48%;
+        margin: 24px auto;
+    }
+
+    nav ul li a{
+        color: #1b1b1b;
+    }
+
+    .hero_container{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 32px;
+    }
+
+    .hero_container .imgae_section iframe{
+        width: 100%;
+        height: 200%;
+        align-items: center;
+        
+       
+    }
+
+    .hero_container .text_section{
+        max-width: 100%;
+    }
+
+    .about_container{
+        flex-direction: column;
+    }
+
+    .about_container .text_section{
+        max-width: 100%;
+    }
+
+    .about_container .text_section p{
+        text-align: justify;
+    }
+
+    .section_container .services_items{
+        width: calc(100% / 2 - 32px);
+    }
+
+    .why_us .why_container{
+        flex-direction: column;
+    }
+
+    .why_container .why_items{
+        width: 100%;
+    }
+
+    .gallery_container .gallery_items{
+        width: calc(100% / 2 - 32px);
+        
+    }
+
+    .contact_container{
+        flex-direction: column-reverse;
+    }
+
+    .contact_text .contact_items{
+        margin: 10px 0;
+    }
+
+    .contact_container .contact_form{
+        max-width: 100%;
+    }
+
+    .footer_section{
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .footer_section .useful_links{
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    nav{
+        padding: 0 14px;
+    }
+
+    .hero_section{
+        height: calc(80vh - 80px);
+    }
+
+    .hero_container .text_section h2{
+        font-size: 32px;
+    }
+
+    .hero_container .text_section h3{
+        font-size: 28px;
+    }
+
+    .button{
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+    .section_container .services_items{
+        width: 100%;
+    }
+
+    .gallery_container .gallery_items{
+        width: 100%;
+    }
+}
