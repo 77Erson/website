@@ -6,7 +6,7 @@
     <link rel="icon" href="images/winky.png">
     <title>Erson Editz</title>
     <!-- CSS Link -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Box Icon Link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -321,5 +321,15 @@ With expertise in Adobe Premiere Pro, and Davinci Resolve, I excel in post-produ
         </div>
     </footer>
     <script src="script.js"></script> 
+    <script>
+        const checkbox = document.getElementById('click');
+        const navLinks = document.querySelectorAll('nav ul li a');
+      
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            checkbox.checked = false;
+          });
+        });
+      </script>
 </body>
 </html>
