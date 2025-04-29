@@ -21,13 +21,35 @@
 /* Setting for the whole website */
 a{
     text-decoration: none;
+    color: white;
 }
-
+.hero_section_button a:hover{
+    color:orange;
+    transition: all 0.4s ease;
+}
 ul li{
     list-style: none;
 }
 
 .button{
+    padding: 8px 28px;
+    border: 2px solid gray;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: transparent;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.4s ease;
+}
+
+.button:hover{
+    background: transparent;
+    border: 2px solid orange;
+    transition: all 0.4s ease;
+}
+#submit{
     padding: 8px 28px;
     border: 3px solid transparent;
     outline: none;
@@ -35,19 +57,14 @@ ul li{
     border-radius: 50px;
     background: var(--secondary-color);
     color: #fff;
-    font-size: 18px;
-    font-weight: 600;
-    transition: all 0.4s ease;
-}
-
-.button:hover{
-    background: transparent;
-    border: 3px solid #fff;
-}
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.4s ease;}
 
 #submit:hover{
     border: 3px solid var(--primary-color);
     color: var(--primary-color);
+    background: transparent;
 }
 
 .section_container{
@@ -78,12 +95,13 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
-    height: 80px;
+    height: 60px;
     z-index: 1;
-    background: var(--primary-color);
+    background: black;
     display: flex;
     align-items: center;
     justify-content: center;
+    /*box-shadow: 1px 1px 2px wheat;*/
 }
 
 nav{
@@ -99,7 +117,7 @@ nav .nav_logo a{
 }
 
 nav .nav_logo h2{
-    font-size: 32px;
+    font-size: 30px;
     color: #fff;
 }
 
@@ -114,16 +132,19 @@ nav ul li{
     cursor: pointer;
 }
 
-nav ul li:hover{
+/*nav ul li:hover{
     background-color: var(--secondary-color);
-}
+}*/
 
 nav ul li a{
-    font-size: 18px;
-    font-weight: 600;
-    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    color: grey;
 }
-
+nav ul li a:hover{
+    color: white;
+    transition: all 0.4s ease;
+}
 nav label{
     font-size: 32px;
     color: #fff;
@@ -141,9 +162,9 @@ label .close_btn{
 
 /* Hero Section */
 .hero_section{
-    margin-top: 80px;
-    background: var(--primary-color);
-    height: calc(100vh - 80px);
+    margin-top: 60px;
+    background: #252525;
+    height: calc(100vh - 60px);
 }
 
 .hero_container{
@@ -156,6 +177,8 @@ label .close_btn{
 .hero_container .text_section h2{
     font-size: 40px;
     color: var(--secondary-color);
+    
+   
 }
 
 .hero_container .text_section h3{
@@ -163,6 +186,7 @@ label .close_btn{
     font-weight: 600;
     color: #fff;
     margin-top: 8px;
+    
 }
 
 .hero_container .text_section p{
@@ -170,6 +194,7 @@ label .close_btn{
     font-weight: 600;
     color: #fff;
     margin: 24px 0;
+    
 }
 
 .hero_container .text_section .hero_section_button{
@@ -189,7 +214,10 @@ label .close_btn{
     height:315px;
 
 }
-
+.hero_container .imgae_section iframe:hover{
+    transition: transform 0.2s ease-out;
+    transform: scale(1.02);
+}
 /* About Us Section */
 .about_us{
     padding: 52px 0;
@@ -322,7 +350,11 @@ label .close_btn{
     border-radius: 8px;
     box-shadow: 4px 4px 20px;
 }
+.gallery .gallery_container iframe:hover{
+    transition: transform 0.2s ease-out;
+transform: scale(1.02);
 
+}
 
 .gallery_container .gallery_items{
     width: calc(100% / 3 - 32px);
